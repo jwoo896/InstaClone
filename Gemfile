@@ -28,6 +28,8 @@ gem 'paperclip', '~>4.2'
 gem 'simple_form', '>= 3.0.0'
 #bootstrap
 gem 'bootstrap-sass', '>= 3.0.0'
+#devise
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -45,7 +47,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  #gem 'sqlite3', '1.3.13'
+  gem 'sqlite3', '1.3.13'
   gem 'byebug', platform: :mri
 end
 

@@ -1,1 +1,3 @@
-%h1 InstaClone
+.posts-wrapper.row
+  -@posts.each do |post|
+    = render 'comment_form', post: post
