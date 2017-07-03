@@ -20,9 +20,73 @@
 body {
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+.alert {
+  margin-bottom: 0px;
+}
+
+/*profile*/
+#user_avatar {
+  padding: 1em;
+  margin: 0px auto;
+}
+.profile-header {
+  padding: 20px 0;
+}
+.profile-image {
+  margin: 20px auto;
+  height: 152px;
+  width: 152px;
+}
+.user-name-and-follow {
+  display: inline;
+}
+.profile-user-name {
+  display: inline;
+}
+.edit-button {
+  border-color: #818488;
+  color: #818488;
+  margin-left: 20px;
+}
+.profile-bio {
+  margin-top: 20px;
+}
+#user_bio {
+  margin-top: 20px;
+  width: 80%;
+}
+.follow-button {
+  text-transform: uppercase;
+  border-color: #4090db;
+  color: #4090db;
+  margin-left: 20px;
+  &:visited, &:focus, &:hover {
+    border-color: #2D6396;
+    color: #2D6396;
+  }
+}
+.unfollow-button {
+  text-transform: uppercase;
+  border-color: #66bd2b;
+  background-color: #66bd2b;
+  color: white;
+  margin-left: 20px;
+  &:visited, &:focus, &:hover {
+    border-color: #47821F;
+    background-color: #47821F;
+    color: white;
+  }
 }
 
 /* navbar */
+.navbar {
+margin-bottom: 0px;
+}
 .navbar-brand {
   a{
     color: #125688;
@@ -30,17 +94,43 @@ body {
 }
 .navbar-default {
   background-color: #fff;
-  height: 54px;
   .navbar-nav li a {
     color: #125688;
   }
 }
 .navbar-container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
+}
+.notification-dropdown {
+  margin-top: 10px;
+  button {
+    border: none;
+  }
+}
+.notification-index-list {
+  margin-top: 5em;
+  list-style: none;
+  li {
+    margin-top: 1em;
+    background-color: white;
+    padding: 1em;
+  }
 }
 
 /* posts */
+.likes {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+.like {
+  text-decoration: none;
+  color: red;
+}
+.like-button a:hover, a:focus {
+  text-decoration: none;
+  color: red;
+}
 .posts-wrapper {
   padding-top: 40px;
   margin: 0 auto;
@@ -133,7 +223,46 @@ body {
   justify-content: center;
 }
 
-/* wrapper and styling for the new and edit views*/
+/* wrapper and styling for the new, edit views and devise views*/
+.registration-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: image-url('mountain.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.log-in {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+}
+.login-bg{
+  padding-top: 4em;
+  height: 100%;
+  background-image: image-url('city.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.panel {
+  border-radius: 8px;
+}
+.panel-heading {
+  h1 {
+    text-align: center;
+  }
+}
+#image-preview {
+  margin: 0px auto;
+}
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
+}
 .form-wrapper {
   width: 60%;
   margin: 20px auto;
@@ -145,4 +274,43 @@ body {
 .edit-links {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+/*comments*/
+.comments {
+  .paginator {
+    margin: .5em;
+    .more-comments {
+      color: #A5A7AA;
+    }
+  }
+}
+.comments-submit-button {
+  position: absolute;
+  left: -9999px;
+}
+
+/*paginator*/
+#paginator {
+  color: #4090DB;
+  height: 120px;
+  width: 120px;
+  margin: 60px auto 40px;
+  position: relative;
+  display: table;
+  border: 2px solid #4090DB;
+  border-radius: 50%;
+  :hover{
+    border: 1px solid #2D6DA8;
+    border-radius: 50%;
+  }
+}
+#load_more {
+  display: table-cell;
+  font-size: 12px;
+  padding: 0px 9px;
+  vertical-align: middle;
+  text-decoration: none;
+  a :hover {
+    color: #2D6DA8;
+  }
 }

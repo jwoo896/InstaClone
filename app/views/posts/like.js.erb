@@ -1,0 +1,5 @@
+//$('#like_<%= @post.id %>').removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
+$('#like_<%= @post.id %>').replaceWith('<%= liked_post @post %>');
+$('.likes').html('<%=j (render partial: "posts/likes", locals: {post: @post} ) %>');
+//look into only appending current_user to the list of names or incrementing a count instead of rerendering the partial
+//if html.match /^[0-9]+/, increment that number by one. else append current_user to list of names

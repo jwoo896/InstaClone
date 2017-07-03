@@ -30,6 +30,12 @@ gem 'simple_form', '>= 3.0.0'
 gem 'bootstrap-sass', '>= 3.0.0'
 #devise
 gem 'devise'
+#kaminari (paginator)
+gem "kaminari", github: "amatsuda/kaminari"
+#acts as votable
+gem 'acts_as_votable', '~> 0.10.0'
+#jquery infinitepages
+gem 'jquery-infinite-pages'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
